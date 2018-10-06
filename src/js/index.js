@@ -3,7 +3,7 @@
     var mnemonic = new Mnemonic("english");
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = bitcoin.networks.bitcoin;
+    var network = bitcoin.networks.zencash_testnet;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
@@ -411,7 +411,7 @@
 
     function setBip44DerivationPath() {
         var purpose = parseIntNoNaN(DOM.bip44purpose.val(), 44);
-        var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+        var coin = parseIntNoNaN(DOM.bip44coin.val(), 121);
         var account = parseIntNoNaN(DOM.bip44account.val(), 0);
         var change = parseIntNoNaN(DOM.bip44change.val(), 0);
         var path = "m/";

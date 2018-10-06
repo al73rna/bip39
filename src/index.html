@@ -67,14 +67,8 @@
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <select id="strength" class="strength form-control">
-                                        <option val="3">3</option>
-                                        <option val="6">6</option>
-                                        <option val="9">9</option>
                                         <option val="12">12</option>
-                                        <option val="15" selected>15</option>
-                                        <option val="18">18</option>
-                                        <option val="21">21</option>
-                                        <option val="24">24</option>
+                                        <option val="24" selected>24</option>
                                     </select>
                                     <span class="input-group-btn">
                                         <button class="btn generate">Generate Random Mnemonic</button>
@@ -141,7 +135,7 @@
                                         <a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#purpose" target="_blank">Purpose</a>
                                     </label>
                                     <div class="col-sm-10">
-                                        <input id="purpose" type="text" class="purpose form-control" value="44">
+                                        <input id="purpose" type="text" class="purpose form-control" value="44" readonly="readonly">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -149,7 +143,7 @@
                                         <a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki#registered-coin-types" target="_blank">Coin</a>
                                     </label>
                                     <div class="col-sm-10">
-                                        <input id="coin" type="text" class="coin form-control" value="0">
+                                        <input id="coin" type="text" class="coin form-control" value="121" readonly="readonly">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -171,7 +165,7 @@
                                 <div class="form-group">
                                     <label for="bip44-path" class="col-sm-2 control-label">BIP32 Derivation Path</label>
                                     <div class="col-sm-10">
-                                        <input id="bip44-path" type="text" class="path form-control" value="m/44'/0'/0'/0" readonly="readonly">
+                                        <input id="bip44-path" type="text" class="path form-control" value="m/44'/121'/0'/0" readonly="readonly">
                                     </div>
                                 </div>
                             </form>
@@ -187,24 +181,6 @@
                                     <label for="bip32-path" class="col-sm-2 control-label">BIP32 Derivation Path</label>
                                     <div class="col-sm-10">
                                         <input id="bip32-path" type="text" class="path form-control" value="m/0">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Hive Wallet</label>
-                                    <div class="col-sm-10">
-                                        <p class="form-control no-border">
-                                        Use path <code>m/0'/0</code>.
-                                        For more info see the <a href="https://www.hivewallet.com/" target="_blank">Hive Wallet homepage</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mycelium-path" class="col-sm-2 control-label">Mycelium Wallet</label>
-                                    <div class="col-sm-10">
-                                        <p class="form-control no-border">
-                                        Use path <code>m/44'/0'/0'/0</code>.
-                                        For more info see the <a href="http://www.mycelium.com/" target="_blank">Mycelium Wallet homepage</a>
-                                        </p>
                                     </div>
                                 </div>
                             </form>
@@ -284,7 +260,6 @@
             <span>Show next </button>
             <input type="number" class="rows-to-add" value="20">
             <button class="more">Show</button>
-
             <hr>
 
 
